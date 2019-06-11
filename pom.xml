@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>lingyi_1</groupId>
+	<artifactId>lingyi_1</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+		<!-- springboot基础包 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>1.5.14.RELEASE</version>
+		</dependency>
+
+		<!-- spring热部署包/spring-boot-devtools -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>1.5.14.RELEASE</version>
+		</dependency>
+
+		<!-- springboot对jsp环境支持/tomcat-embed-jasper -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<version>8.5.14</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-engine-core -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity-engine-core</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>1.5.20</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-spring -->
+		<!-- shiro环境包 -->
+	<!-- 	<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.3.2</version>
+		</dependency> -->
+
+
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>jdk-1.8</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<jdk>1.8</jdk>
+			</activation>
+			<properties>
+				<maven.compiler.source>1.8</maven.compiler.source>
+				<maven.compiler.target>1.8</maven.compiler.target>
+				<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+			</properties>
+		</profile>
+	</profiles>
+</project>
